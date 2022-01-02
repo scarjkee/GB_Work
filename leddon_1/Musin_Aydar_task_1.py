@@ -34,3 +34,4 @@ def convert_time(duration: int) -> str:
 duration = int(input("duration: "))
 result = convert_time(duration)
 print(result)
+

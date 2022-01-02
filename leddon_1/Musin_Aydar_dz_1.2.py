@@ -33,3 +33,4 @@ print(result_1)
 
 result_2 = sum_list_2(my_list)
 print(result_2)
+
