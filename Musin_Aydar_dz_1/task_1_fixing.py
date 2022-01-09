@@ -5,7 +5,7 @@ def convert_time(duration: int) -> str:
     minutes = (duration - (3600 * (duration // 3600))) // 60
     seconds = (duration - (3600 * (duration // 3600))) - (minutes * 60)
 
-# полученные значения надо сформировать в список
+
     if day > 0:
         result = f'{day} дн {hour} час {minutes} мин {seconds} сек'
     elif hour > 0:
