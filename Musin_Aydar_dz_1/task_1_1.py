@@ -19,13 +19,13 @@ def convert_time(duration: int) -> str:
     spisok = timeout
 
     if len(spisok) > 3:
-        answer = (f"""{str(spisok[0])} дн {spisok[1]} час {spisok[2]} мин {spisok[3]} сек""")
+        answer = f"""{(spisok[0])} дн {spisok[1]} час {spisok[2]} мин {spisok[3]} сек"""
     elif len(spisok) > 2:
-        answer = (f"""{spisok[0]} час {spisok[1]} мин {spisok[2]} сек""")
+        answer = f"""{spisok[0]} час {spisok[1]} мин {spisok[2]} сек"""
     elif len(spisok) > 1:
-        answer = (f"""{spisok[0]} мин {spisok[1]} сек""")
+        answer = f"""{spisok[0]} мин {spisok[1]} сек"""
     else:
-        answer = (f"""{spisok[0]} сек""")
+        answer = f"""{spisok[0]} сек"""
     return answer
 
 
@@ -34,3 +34,4 @@ def convert_time(duration: int) -> str:
 duration = int(input("duration: "))
 result = convert_time(duration)
 print(result)
+
