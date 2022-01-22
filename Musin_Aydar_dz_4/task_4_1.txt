@@ -1,3 +1,5 @@
+задание 1
+
 1)Проверить, установлен ли пакет pillow в глобальном окружении. Если да — зафиксировать версию.
 PS C:\Users\scarjkee\PycharmProjects\GB_Work> pip show pillow
 WARNING: Package(s) not found: pillow
