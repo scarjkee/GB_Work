@@ -1,0 +1,28 @@
+задание 1
+
+1)Проверить, установлен ли пакет pillow в глобальном окружении. Если да — зафиксировать версию.
+PS C:\Users\scarjkee\PycharmProjects\GB_Work> pip show pillow
+WARNING: Package(s) not found: pillow
+2)Установить самую свежую версию pillow, если ранее она не была установлена.
+PS C:\Users\scarjkee\PycharmProjects\GB_Work> pip install pillow
+Collecting pillow
+  Downloading Pillow-9.0.0-cp310-cp310-win_amd64.whl (3.2 MB)
+     |████████████████████████████████| 3.2 MB 437 kB/s
+Installing collected packages: pillow
+Successfully installed pillow-9.0.0
+WARNING: You are using pip version 21.2.3; however, version 21.3.1 is available.
+You should consider upgrading via the 'C:\Users\scarjkee\AppData\Local\Programs\Python\Python310\python.exe -m pip install -
+-upgrade pip' command.
+3)Создать и активировать виртуальное окружение. Убедиться, что в нем нет пакета pillow.
+PS C:\Users\scarjkee\PycharmProjects\GB_Work> python -m venv virtual
+PS C:\Users\scarjkee\PycharmProjects\GB_Work> virtual/Scripts/activate
+(virtual) PS C:\Users\scarjkee\PycharmProjects\GB_Work>
+4)Установить в виртуальное окружение pillow версии 7.1.1 (или другой, отличной от самой свежей).
+(virtual) PS C:\Users\scarjkee\PycharmProjects\GB_Work> pip install pillow==8.4.0
+Collecting pillow==8.4.0
+  Using cached Pillow-8.4.0-cp310-cp310-win_amd64.whl (3.2 MB)
+Installing collected packages: pillow
+Successfully installed pillow-8.4.0
+5)Деактивировать виртуальное окружение.
+(virtual) PS C:\Users\scarjkee\PycharmProjects\GB_Work> deactivate
+PS C:\Users\scarjkee\PycharmProjects\GB_Work>
