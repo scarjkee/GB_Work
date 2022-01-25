@@ -9,7 +9,7 @@ def check_gen(tutors: list, klasses: list):
     if len(klasses) < len(tutors):
         add_in = len(tutors) - len(klasses)
         for i in range(add_in):
-            klasses.append('None')
+            klasses.append(None)
     check = ((tutors[i], klasses[i],) for i in range(len(tutors)))
 
     return check
