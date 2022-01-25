@@ -1,4 +1,4 @@
-#задание 2
+
 
 import requests
 
