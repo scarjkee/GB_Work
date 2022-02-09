@@ -34,12 +34,6 @@ class Matrix:
 
     @reset_str
     def __str__(self):
-        # res = ""
-        # for el in self.matrix:
-        #     res += f'|'
-        #     for i in el:
-        #         res += f' {i}'
-        #     res += f' |\n'
         return self.matrix
 
     @reset_str
@@ -48,18 +42,8 @@ class Matrix:
         return sum_matrix
 
 
-    def reset_str(self, arg):
-        res = ""
-        for el in arg:
-            res += f'|'
-            for i in el:
-                res += f' {i}'
-            res += f' |\n'
-        return res
-
-
 if __name__ == '__main__':
-    first_matrix = Matrix([[1, 2, 7], [3, 4, 8], [5, 6, 9]])
+    first_matrix = Matrix([[1, 2, 8], [3, 4, 7], [5, 6, 6]])
     second_matrix = Matrix([[6, 5, 1], [4, 3, 2], [2, 1, 3]])
     print(first_matrix)
     """
