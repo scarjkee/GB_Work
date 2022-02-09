@@ -17,16 +17,16 @@ class Matrix:
         else:
             raise ValueError('fail initialization matrix')
 
-    # def decor(func):
-    #     def wrapper(self):
+    # def reset_str(func):
+    #     def wrapper(args):
     #         result = func
     #         res = ''
-    #         for el in self:
+    #         for el in args:
     #             res += f'|'
     #             for i in el:
     #                 res += f' {i}'
     #             res += f' |\n'
-    #         return res
+    #         return result
     #     return wrapper
 
 
