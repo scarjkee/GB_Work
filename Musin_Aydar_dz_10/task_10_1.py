@@ -43,8 +43,8 @@ class Matrix:
 
 
 if __name__ == '__main__':
-    first_matrix = Matrix([[1, 2, 8], [3, 4, 7], [5, 6, 6]])
-    second_matrix = Matrix([[6, 5, 1], [4, 3, 2], [2, 1, 3]])
+    first_matrix = Matrix([[1, 2], [3, 4], [5, 6]])
+    second_matrix = Matrix([[6, 5], [4, 3], [2, 1]])
     print(first_matrix)
     """
     | 1 2 |
