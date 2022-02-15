@@ -18,7 +18,7 @@ class Matrix:
 
 
     @classmethod
-    def set_len(cls, matrix):
+    def __set_len(cls, matrix):
         st = set()
         for i in matrix:
             st.add(len(i))
@@ -26,7 +26,7 @@ class Matrix:
 
 
     def __init__(self, matrix: List[List[int]]):
-        if type(matrix) == list and len(matrix) > 1 and Matrix.set_len(matrix):
+        if type(matrix) == list and len(matrix) > 1 and Matrix.__set_len(matrix):
             self.matrix = matrix
         else:
             raise ValueError('fail initialization matrix')
