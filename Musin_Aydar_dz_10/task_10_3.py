@@ -8,11 +8,12 @@ class Cell:
     def make_order(self, number: int) -> str:
         full = self.cells // number
         out = self.cells % number
-        res = ''
+        res = "'''\n"
         for _ in range(full):
             res += f'{number * "*"}\n'
         if out != 0:
-            res += f'{"*" * out}'
+            res += f'{"*" * out}\n'
+        res += "'''"
         return res
 
     def __add__(self, other):
