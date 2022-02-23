@@ -1,5 +1,4 @@
 from typing import List
-from numpy import sum
 
 
 class Matrix:
