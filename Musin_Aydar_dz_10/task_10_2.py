@@ -1,5 +1,8 @@
-class Clothes:
+from abc import abstractmethod
 
+
+class Clothes:
+    @abstractmethod
     def calculate(self):
         pass
 
@@ -14,7 +17,8 @@ class Coat(Clothes):
 
     @property
     def calculate(self):
-        return f'{self.size / 6.5 + 0.5 : .2f}'
+        return round(self.size / 6.5 + 0.5, 2)
+
 
 class Costume(Clothes):
 
@@ -26,7 +30,8 @@ class Costume(Clothes):
 
     @property
     def calculate(self):
-        return f'{2 * self.height + 0.3: .2f}'
+        return round(2 * self.height + 0.3, 2)
+
 
 if __name__ == '__main__':
     coat = Coat(45.0)

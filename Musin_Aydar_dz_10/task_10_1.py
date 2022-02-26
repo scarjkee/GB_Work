@@ -32,7 +32,6 @@ class Matrix:
     def __add__(self, other):
         sum_matrix = ''
         for i, j in zip(self.matrix, other.matrix):
-            el = ''
             sum_matrix += f'|'
             for el1 in zip(i, j):
                 el = sum(el1)
